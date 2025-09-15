@@ -21,3 +21,15 @@ const montantTTC = montantHT + (montantHT * (1 - tauxTVA));
 document.getElementById("text4").textContent = "Montant HT = " + montantHT + ", taux TVA = " + tauxTVA + " et montant TTC = " + montantTTC
 
 /*Exo 5*/
+if (((4 >= 6) || ("herbe" != "verte")) && !(((12 * 2) == 144) && true) == true){
+    document.getElementById("text5").textContent = "C'est vrai"
+}
+else {
+    document.getElementById("text5").textContent = "C'est faux"
+}
+
+/*Exo 6*/
+let poidsKG = 80;
+let taille = 1.88;
+let IMC = (poidsKG / (taille * taille)).toFixed(2);
+document.getElementById("text6").textContent = "IMC = " + IMC;
