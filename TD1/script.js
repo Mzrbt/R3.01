@@ -33,3 +33,17 @@ let poidsKG = 80;
 let taille = 1.88;
 let IMC = (poidsKG / (taille * taille)).toFixed(2);
 document.getElementById("text6").textContent = "IMC = " + IMC;
+
+/*Exo 7*/
+const miniOffert = 50;
+let montantCommande = 60;
+if (montantCommande >= miniOffert){
+    document.getElementById("text7").textContent = "Livraison gratuite !";
+} else {
+    document.getElementById("text7").textContent = "Frais de livraison : 5 euros"
+}
+
+/*Exo 8*/
+let nbBinStr = "010100101011011";
+let decimal = parseInt(nbBinStr, 2);
+document.getElementById("text8").textContent = "Nombre binaire = " + nbBinStr + " -> en décimal = " + decimal;
