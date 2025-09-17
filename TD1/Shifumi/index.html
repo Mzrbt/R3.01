@@ -4,19 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Shifumi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <h2 class="text-2xl text-bold text-center mt-5">Jeu du Shifumi</h2>
 
-  <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-5 mx-auto block">Pierre</button>
+  <header>
+    <h2>Jeu du Shifumi</h2>
+  </header>
 
-  <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-5 mx-auto block">Feuille</button>
+  <div>
+    <button class="button" type="button">Pierre</button>
+    <button class="button" type="button">Feuille</button>
+    <button class="button" type="button">Ciseaux</button>
+  </div>
 
-  <button class="bg-blue-500 text-white py-2 px-4 rounded-lg mt-5 mx-auto block">Ciseau</button>
+  <p id="choix">Votre choix</p>
 
-  <p class="text-bold text-center mt-10">Ciseau</p>
+  <p id="bot">Choix du bot</p>
+
+  <p id="resultats">GAGNANT</p>
+
+  <p id="liste_resultats">Victoires : 0, Défaites : 0, Nulles : 0</p>
 
   <script src="script.js"></script>
 </body>
